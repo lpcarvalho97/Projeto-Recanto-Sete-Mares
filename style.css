@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.topo{
+    width: 100%;
+    
+}
+
+.cabecalho{
+    width: 100%;
+    height: 5vh;
+    background-color: cornflowerblue;
+    align-items: center;
+    padding-top: 1%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recanto{
+    width: 100%;
+    text-align: center;
+    /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");
+    margin-top: 10%;/**/
+}
+
+
+.reservar{
+    color: black;
+
+    
+}
+
+.logo{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+}
+
+.logoIm{
+    width: 50%;
+    height: 50%;
+    
+}
+
+.contato{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.localizacao{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 255, 0.415);
+    margin-top: -10%;
+    position:relative; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
+}
+
+.textos{
+    font-family: vegan;
+    color: aliceblue;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@font-face{
+    font-family: ke Aloha;
+    src: url('/fontes/Ke\ Aloha.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: vegan;
+    src: url('/fontes/VeganStylePersonalUse-5Y58.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
