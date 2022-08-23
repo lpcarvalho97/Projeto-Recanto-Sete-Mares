@@ -150,7 +150,7 @@ body{
 }
 
 .image img{
-    width:  90vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+    width:  70vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
     height: 40vw; /*Nesse percentual permite a inclusão da tag <p>*/
     /*padding-left: 10%;
     padding-right: 10%;*/
@@ -175,6 +175,7 @@ body{
 
 .btn:hover{
     transform: scale(1.5);
+    color: rgb(223, 23, 49);
 }
 
 #voltar{
