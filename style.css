@@ -31,7 +31,11 @@ body{
     text-align: center;
     /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");
     margin-top: 10%;/**/
-    background-image: url("/images/landscape-nature-horizon-mountain-cloud-sky-1217291-pxhere.com.jpg");
+    background-image: url("/images/pearlmienorpxhere.com.jpg");
+    background-position:bottom; /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
+
+    
+
 }
 
 
@@ -44,15 +48,16 @@ body{
 }
 
 .logo{
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10%;
+    margin-top: -9%;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.034);
 }
 
 .logoIm{
-    width: 50%;
+    width: 25%;
     height: 50%;
     
 }
