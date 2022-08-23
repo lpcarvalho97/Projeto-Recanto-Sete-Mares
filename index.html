@@ -15,10 +15,12 @@
     <header>
         <div class="topo">
             <div class="cabecalho">
-                <a class="contato" href="https://wa.me/5547996320778" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i> 
+                <a class="contato" href="https://wa.me/5547996320778" target="_blank"><i
+                        class="fa-brands fa-whatsapp fa-lg"></i>
                     (48) 9 9632-0778</a>
                 <a class="contato"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-                <a class="contato"><i class="fa-brands fa-instagram"></i></a>
+                <a class="contato" href="https://www.instagram.com/recantosetemaresbc/"><i
+                        class="fa-brands fa-instagram"></i></a>
                 <a class="contato"><i class="fa-brands fa-linkedin fa-lg"></i></a>
             </div>
         </div>
@@ -27,21 +29,22 @@
 
         <div class="recanto">
 
-            
+
             <figure class="logo">
-                <img class="logoIm" src="/images/logotrans.png" alt="logo da pousada"> 
+                <img class="logoIm" src="/images/logotrans.png" alt="logo da pousada">
             </figure>
 
         </div>
 
         <div class="localizacao">
-            <iframe
+            <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.365159307828!2d-48.63620538719097!3d-26.95533329867755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c98895a6df2d%3A0xc61ec89eca081178!2sRecanto%20Sete%20Mares!5e0!3m2!1spt-BR!2sbr!4v1661129192766!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:20;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
             <div class="textos">
+                <h1 class="nome">RECANTO SETE MARES</h1>
                 <h1><i class="fa-solid fa-check"></i>Apenas 7 minutos a pé do mar;</h1>
                 <h1><i class="fa-solid fa-check"></i>A 500 metros de distância da Praia Brava;</h1>
                 <h1><i class="fa-solid fa-check"></i>Localizado próximo ao centro de Balneário Camboriú;</h1>
@@ -51,8 +54,125 @@
                 <h1 class="reserva">Faça uma reserva</h1>
             </div>
         </div>
-    </main>
 
+        <div class="setor2">
+            <h1 class="acomodar">Nossas acomodações</h1>
+            <div class="slide">
+                <div class="slides">
+                    <div id="voltar" class="btn">
+                        <i class="fas fa-chevron-left">
+
+                        </i>
+                    </div>
+
+                    <div id="next" class="btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="pag" id="atual">
+                        <div class="image">
+                            <img class="carrossel" src="/images/carrossel1.png" alt="apartamento Pacifico">
+                        </div>
+                    </div>
+
+                    <div class="pag" id="atual">
+                        <div class="image">
+                            <img class="carrossel" src="/images/carrossel2.png" alt="foto quarto">
+                        </div>
+                    </div>
+
+                    <div class="pag" id="atual">
+                        <div class="image">
+                            <img class="carrossel" src="/images/carrossel3.jpg" alt="foto recanto">
+                        </div>
+                    </div>
+
+                    <div class="pag" id="atual">
+                        <div class="image">
+                            <img class="carrossel" src="/images/carrossel4.jpg" alt="foto quarto 2">
+                        </div>
+                    </div>
+
+                    <div class="pag" id="atual">
+                        <div class="image">
+                            <img class="carrossel" src="/images/carrossel5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="balls">
+                        <div class="imgAtual" id="0"></div>
+                        <div id="1"></div>
+                        <div id="2"></div>
+                        <div id="3"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        var balls = document.querySelector('.balls')
+        var quant = document.querySelectorAll('.slides .image')
+        var atual = 0
+        var imagem = document.getElementById('atual')
+        var next = document.getElementById('next')
+        var voltar = document.getElementById('voltar')
+        var rolar = true
+    
+        for(let i=0; i < quant.length; i ++){
+            var div = document.createElement('div')
+            div.id = 1
+            balls.appendChild(div)
+        }
+        document.getElementById('0').classList.add('imgAtual')
+    
+        var pos = document.querySelectorAll('.balls div')
+    
+        for(let i=0; i < pos.length; i ++){
+            pos[i].addEventListener('click', ()=>{
+                atual = pos[i].id
+                rolar = true
+                slide()
+            })
+        }
+    
+        voltar.addEventListener('click', ()=>{
+            atual--
+            rolar = true
+            slide()
+        })
+        next.addEventListener('click', ()=>{
+            atual++
+            rolar = false
+            slide()
+        })
+    
+        function slide(){
+            if(atual >= quant.length){
+                atual = 0
+            }
+            else if(atual < 0){
+                atual = quant.length-1
+            }
+            document.querySelector('.imgAtual').classList.remove('.imgAtual')
+            imagem.style.marginLeft = -100*atual+'vw' /*Não usar porcentagem! Essa propriedade permite a alteração do slide
+            conforme a definição em 'vw'. O sinal de '-' permite a alteração do slide no sentido desejado*/
+            document.getElementById(atual).classList.add('imgAtual')
+    
+        }
+        setInterval(()=>{
+            if(rolar){
+            atual++
+            slide()
+            }
+            else{
+                rolar = true
+            }
+            
+        },7000)
+    
+    </script>
 
 </body>
 

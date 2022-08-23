@@ -29,10 +29,10 @@ body{
     padding-top: 0%;
     width: 100%;
     text-align: center;
-    /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");
-    margin-top: 10%;/**/
-    background-image: url("/images/pearlmienorpxhere.com.jpg");
-    background-position:bottom; /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
+    background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");
+    margin-top: 1%;/**/
+    /*background-image: url("/images/pearlmienorpxhere.com.jpg");*/
+    background-position: top; /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
 
     
 
@@ -52,7 +52,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: -9%;
-    position: relative;
+    /*position: relative;*/
     background-color: rgba(0, 0, 0, 0.034);
 }
 
@@ -65,6 +65,7 @@ body{
 .contato{
     color: aliceblue;
     text-decoration: none;
+    position: relative;
 
 }
 
@@ -75,7 +76,18 @@ body{
     margin-top: -10%;
     position:relative; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
     background-image: url("/images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
+    padding-top: 1%;
+    height: 100%;
     
+}
+
+.mapa{
+    margin-bottom: 1%;
+}
+
+.nome{
+    text-align: center;
+    color: rgba(98, 0, 255, 0.363);
 }
 
 .textos{
@@ -86,6 +98,112 @@ body{
     font-size: 4vh;
     
 }
+
+.setor2{
+    background-image: url("/images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
+}
+
+.acomodar{
+    font-family: Vacation Planner, 'Times New Roman', Times, serif;
+    color:rgba(98, 0, 255, 0.363);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 8vh;
+    text-align: center;
+    padding-top: 1%;
+}
+
+/*Inserção do Carrossel*/
+
+.setor2{
+    /*background-color: rgb(219, 214, 204);*/
+    /*padding-top: 0%;*/
+    padding: 0% 0% 5% 0%;
+    text-align: center;    
+    width: 100%;
+    /*background-color: rgb(141, 140, 138);*/
+    background-color: rgb(235, 250, 248);
+    /*background-color: rgba(114, 118, 119, 0.767);*/
+}
+
+.slide{
+    width: 100%; /*Tamanho do slide dentro da section. Deixar em 100% se quiser a ocupação de toda a section*/
+    height: 40%;
+    overflow: hidden; /*Impede que o carrossel vaze*/
+    border-radius: 2%;
+    transition: all 0.4s;
+    /*align-items: center;*/
+  
+}
+
+.slides{
+    width: 100%; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide
+    Tentar deixar em fit-content para verificar se o comportamento deste combina com a lógica da programação do carrossel.*/
+    display:flex; 
+    padding-top: 1%; 
+}
+
+.pag{
+    display: flex; /*Foi criada a class pag para configurar texto e imagem do carrossel lado a lado, o que é permitido através do atributo 
+    'flex';*/
+
+}
+
+.image img{
+    width:  90vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+    height: 40vw; /*Nesse percentual permite a inclusão da tag <p>*/
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    margin-left: 10%;
+    border-radius: 5%;
+
+}
+
+.btn{
+    position: absolute;
+    color: rgba(48, 41, 41, 0.425);
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 2.7em;
+    margin-top: 20%;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#voltar{
+    top: 100%;
+    left: 10%;
+}
+
+#next{
+    top: 100%;
+    right: 10%;
+}
+
+.balls {
+    position: absolute;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+
+#atual{
+    /*margin-left: -100%;*/
+    transition: all 2s;
+    
+}
+
+
+/*Fim da inserção do carrossel*/
 
 @font-face{
     font-family: ke Aloha;
