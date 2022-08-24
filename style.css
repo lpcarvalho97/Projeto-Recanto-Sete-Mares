@@ -75,7 +75,7 @@ body{
     background-color: rgba(0, 0, 255, 0.415);
     margin-top: -10%;
     position:relative; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
-    background-image: url("/images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
+    background-image: url("images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
     padding-top: 1%;
     height: 100%;
     
@@ -100,7 +100,7 @@ body{
 }
 
 .setor2{
-    background-image: url("/images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
+    background-image: url("images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
 }
 
 .acomodar{
@@ -206,24 +206,59 @@ body{
 
 /*Fim da inserção do carrossel*/
 
+.setor3{
+    text-align: center;
+}
+
+.setor4{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.recado{
+        font-family: Vacation Planner, 'Times New Roman', Times, serif;
+        color:rgba(98, 0, 255, 0.363);
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 8vh;
+        text-align:right;
+        padding-top: 1%;
+}
+
+.formulario{
+    font-family: Vacation Planner, 'Times New Roman', Times, serif;
+        color:rgba(98, 0, 255, 0.363);
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 8vh;
+        text-align:left;
+        padding-top: 0%;
+}
+
+
+/*Inserção de fontes externas*/
+
 @font-face{
     font-family: ke Aloha;
-    src: url('/fontes/Ke\ Aloha.ttf') format('truetype');
+    src: url('fontes/Ke\ Aloha.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: vegan;
-    src: url('/fontes/VeganStylePersonalUse-5Y58.ttf') format('truetype');
+    src: url('fontes/VeganStylePersonalUse-5Y58.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: Vacation Planner;
-    src: url('/fontes/VacationPlanner/Vacation\ Planner.ttf') format('truetype');
+    src: url('fontes/VacationPlanner/Vacation\ Planner.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Fim da inserção das fontes externas*/
