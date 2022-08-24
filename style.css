@@ -29,10 +29,11 @@ body{
     padding-top: 0%;
     width: 100%;
     text-align: center;
-    background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");
+    /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");*/
+    background-image: url("images/beach_big.jpg");
     margin-top: 1%;/**/
     /*background-image: url("/images/pearlmienorpxhere.com.jpg");*/
-    background-position: top; /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
+    /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
 
     
 
@@ -211,10 +212,11 @@ body{
 }
 
 .setor4{
-
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    background-image: url("images/feriaskombi.jpg");
+    background-position: bottom;
+    /*https://pxhere.com/pt/photo/971394?utm_content=clipUser&utm_medium=referral&utm_source=pxhere */
 }
 
 .recado{
@@ -227,16 +229,133 @@ body{
         padding-top: 1%;
 }
 
+/*Inserção do formulário*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));*/
+}
+
 .formulario{
     font-family: Vacation Planner, 'Times New Roman', Times, serif;
-        color:rgba(98, 0, 255, 0.363);
+        /*color:rgba(98, 0, 255, 0.363);*/
+        color: aliceblue;
         margin-top: auto;
         margin-bottom: auto;
         font-size: 8vh;
-        text-align:left;
+        text-align:center;
         padding-top: 0%;
 }
 
+.box{
+    color: white;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    left: 0%;
+    /*transform: translate(-50%, -50%);*/
+    background-color: rgba(0,0,0,0.5);
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 15px;
+    width: 50%;
+    margin-top: 1%;
+}
+
+.box1{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 96%;
+    margin-top: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/*efetua a animação de aproximação e distanciamento dos inputs*/
+
+.inputUser:focus ~ .labelinput,
+.inputUser:valid ~ .labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#datanascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+/*Fim do formulário*/
+
+/*Inserção do vídeo*/
+.video{
+    width: 50%;
+    margin-top: 1%;
+    padding-top: 1%;
+
+    
+}
+
+.recado{
+    text-align: center;
+}
+
+
+/*Fim da inserção do vídeo*/
 
 /*Inserção de fontes externas*/
 
