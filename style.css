@@ -35,8 +35,6 @@ body{
     /*background-image: url("/images/pearlmienorpxhere.com.jpg");*/
     /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
 
-    
-
 }
 
 
@@ -47,6 +45,14 @@ body{
 
     
 }
+
+.reserva1{
+    color: rgba(112, 218, 12, 0.808);
+    text-align: center;
+    text-decoration: none;
+    
+}
+
 
 .logo{
     width: 100%;
@@ -68,6 +74,13 @@ body{
     text-decoration: none;
     position: relative;
 
+}
+
+.contatoi{
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
 }
 
 .localizacao{
@@ -207,8 +220,26 @@ body{
 
 /*Fim da inserção do carrossel*/
 
+/*Estruturação do setor 3 */
+
 .setor3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    padding-top: 5%;
+}
+
+.subtitulo{
+    font-family:Vacation Planner, 'Times New Roman', Times, serif;
+}
+
+.contactar{
+    font-family: Vacation Planner, 'Times New Roman', Times, serif;
+}
+
+.subtitulo a{
+    text-decoration: none;
 }
 
 .setor4{
@@ -219,15 +250,6 @@ body{
     /*https://pxhere.com/pt/photo/971394?utm_content=clipUser&utm_medium=referral&utm_source=pxhere */
 }
 
-.recado{
-        font-family: Vacation Planner, 'Times New Roman', Times, serif;
-        color:rgba(98, 0, 255, 0.363);
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 8vh;
-        text-align:right;
-        padding-top: 1%;
-}
 
 /*Inserção do formulário*/
 body{
@@ -342,20 +364,66 @@ legend{
 /*Fim do formulário*/
 
 /*Inserção do vídeo*/
+
 .video{
     width: 50%;
     margin-top: 1%;
     padding-top: 1%;
-
-    
+    padding-bottom: 2%;
+    background-color: rgba(255, 255, 255, 0.441);
+    border-radius: 15px;
+    align-items: center;
 }
 
 .recado{
+    font-family: Vacation Planner, 'Times New Roman', Times, serif;
+    color:rgba(98, 0, 255, 0.493);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 8vh;
+    text-align:right;
+    padding-top: 1%;
     text-align: center;
+}
+
+.filme{
+    width: 96%;
+    height: fit-content;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+
 }
 
 
 /*Fim da inserção do vídeo*/
+
+/*Inserção da imagem e texto de apresentação da anfitriã*/
+
+.cima {
+    background-color: rgba(247, 242, 241, 0.336);
+    border-radius: 3%;
+}
+
+.apresentar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anfitria{
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.sobre{
+    width: 60%;
+    margin-right: 8%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*Inserção de fontes externas*/
 
