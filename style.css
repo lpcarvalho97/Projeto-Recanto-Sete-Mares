@@ -80,6 +80,7 @@ body{
 
 }
 
+
 .contatoi{
     font-size: large;
     color: aliceblue;
@@ -101,6 +102,7 @@ body{
 
 .mapa{
     margin-bottom: 1%;
+    
 }
 
 .nome{
@@ -113,6 +115,7 @@ body{
     color:rgba(98, 0, 255, 0.363);
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 2%;
     font-size: 4vh;
     
 }
@@ -298,6 +301,10 @@ body{
     padding-right: 10px;
 }
 
+form{
+    width: 100%;
+}
+
 fieldset{
     border: 3px solid dodgerblue;
 }
@@ -312,6 +319,14 @@ legend{
 
 .inputBox{
     position: relative;
+}
+
+.inputBox1{
+    width: 46vw;
+}
+
+.areat{
+    width: 100%;
 }
 
 .inputUser{
@@ -418,6 +433,7 @@ legend{
 
 .anfitria{
     width: 30%;
+    height: 20%;
     border-radius: 50%;
     margin-top: 5%;
     margin-left: 2%;
@@ -425,7 +441,7 @@ legend{
 
 .sobre{
     width: 60%;
-    margin-right: 8%;
+    margin-right: 6%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
