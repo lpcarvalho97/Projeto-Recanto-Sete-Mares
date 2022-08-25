@@ -93,7 +93,7 @@ body{
     justify-content: space-evenly;
     background-color: rgba(0, 0, 255, 0.415);
     margin-top: -10%;
-    position:; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
+    /*position:; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
     background-image: url("images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
     padding-top: 1%;
     height: 100%;
@@ -101,7 +101,8 @@ body{
 }
 
 .mapa{
-   width: 100%;
+   width: 40vw;
+  margin-bottom: 1%;
     
 }
 
@@ -116,7 +117,7 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 2%;
-    font-size: 4vh;
+    font-size: 180%;
     
 }
 
@@ -129,7 +130,7 @@ body{
     color:rgba(98, 0, 255, 0.363);
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 8vh;
+    font-size: 400%;
     text-align: center;
     padding-top: 1%;
 }
@@ -200,12 +201,12 @@ body{
 }
 
 #voltar{
-    top: 100%;
+    margin-top: 20%;
     left: 10%;
 }
 
 #next{
-    top: 100%;
+    margin-top: 20%;
     right: 10%;
 }
 
@@ -270,7 +271,7 @@ body{
         color: aliceblue;
         margin-top: auto;
         margin-bottom: auto;
-        font-size: 8vh;
+        font-size: 400%;
         text-align:center;
         padding-top: 0%;
 }
@@ -399,7 +400,7 @@ legend{
     color:rgba(98, 0, 255, 0.493);
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 8vh;
+    font-size: 400%;
     text-align:right;
     padding-top: 1%;
     text-align: center;
@@ -421,7 +422,7 @@ legend{
 /*Inserção da imagem e texto de apresentação da anfitriã*/
 
 .cima {
-    background-color: rgba(247, 242, 241, 0.336);
+    background-color: rgba(247, 242, 241, 0.418);
     border-radius: 3%;
 }
 
@@ -429,6 +430,7 @@ legend{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 2%;
 }
 
 .anfitria{
@@ -443,7 +445,9 @@ legend{
     width: 60%;
     margin-right: 6%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
 }
+
 
 /*Configuração do footer*/
 
@@ -489,3 +493,148 @@ legend{
 }
 
 /* Fim da inserção das fontes externas*/
+
+/*Início da Responsividade*/
+
+@media(max-width: 750px){
+
+    
+.logo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15%;
+    margin-bottom: -16%;
+       
+}
+
+    .logoIm{
+        width: 40vw;
+        height: 20%;
+        position: relative;   
+    }    
+
+    .mapa{
+        width: 80%;
+        height: 60vw;
+       margin-bottom: 1%;
+       margin-top: 6%;
+         
+     }
+
+     .textos{
+        font-family: Vacation Planner, 'Times New Roman', Times, serif;
+        color:rgba(98, 0, 255, 0.363);
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 2%;
+        font-size: 140%;
+        
+    }
+
+    .apresentar{
+        display:block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .anfitria{
+        width: 20vw;
+        height: 20%;
+        border-radius: 50%;
+        margin-top: 5%;
+        margin-left: 30%;
+        
+    }
+
+    
+    .video{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media(max-width: 650px){
+
+    .localizacao{
+        display: flex;
+        flex-direction: column-reverse;
+        /*display: block;*/
+        margin-top: 0%;
+        background-image: url("images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
+        background-position: top;
+    }
+
+    .mapa{
+        width: 98%;
+        height: 60vw;
+       margin-bottom: 2%;
+       margin-top: 2%;
+       margin-left: auto;
+       margin-right: auto;
+         
+     }
+
+
+}
+
+@media(max-width: 600px){
+
+    .acomodar{
+        
+        font-size: 300%;
+    }
+
+    .formulario{
+            font-size: 300%;
+    }
+
+    .recado{
+        font-size: 300%;
+    }
+
+}
+
+@media(max-width:500px){
+    .textos{
+        font-size: 120%;
+        
+    }
+
+    .setor4{
+        display: block;
+
+    }
+
+    .box{
+        width: 97.5%;
+        margin-top: 0%;
+    }
+
+    .box1{
+        padding-left: 1%;
+        padding-right: 1%;
+    }    
+
+    .inputBox1{
+        width: 94vw;
+    }
+
+    .video{
+        width: 100%;
+        margin-top: 1%;
+        padding-top: 0%;
+        padding-bottom: 2%;
+    }
+
+    .anfitria{
+        width: 45vw;
+    }
+
+    .relato{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
