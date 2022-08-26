@@ -8,6 +8,8 @@ body{
     height: 100%;
 }
 
+/*Definições do topo da página*/
+
 .topo{
     width: 100%;
     position: relative;
@@ -25,6 +27,8 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+/*Define o tamanho da logo e o seu comportamento*/
 
 .recanto{
     padding-top: 0%;
@@ -57,6 +61,7 @@ body{
     
 }
 
+/* Fim das configurações da logo*/
 
 .reserva{
     color: rgba(112, 218, 12, 0.808);
@@ -122,7 +127,7 @@ body{
 }
 
 .setor2{
-    background-image: url("images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
+    
 }
 
 .acomodar{
@@ -144,8 +149,8 @@ body{
     text-align: center;    
     width: 100%;
     /*background-color: rgb(141, 140, 138);*/
-    background-color: rgb(235, 250, 248);
     /*background-color: rgba(114, 118, 119, 0.767);*/
+    background-image: url("images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
 }
 
 .slide{
@@ -390,14 +395,14 @@ legend{
     margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 2%;
-    background-color: rgba(255, 255, 255, 0.441);
+    background-color: rgba(247, 242, 241, 0.418);
     border-radius: 15px;
     align-items: center;
 }
 
 .recado{
     font-family: Vacation Planner, 'Times New Roman', Times, serif;
-    color:rgba(98, 0, 255, 0.493);
+    color:rgba(98, 0, 255, 0.679);
     margin-top: auto;
     margin-bottom: auto;
     font-size: 400%;
@@ -422,7 +427,7 @@ legend{
 /*Inserção da imagem e texto de apresentação da anfitriã*/
 
 .cima {
-    background-color: rgba(247, 242, 241, 0.418);
+    
     border-radius: 3%;
 }
 
@@ -441,11 +446,19 @@ legend{
     margin-left: 2%;
 }
 
+
 .sobre{
     width: 60%;
     margin-right: 6%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
+}
+
+.relato{
+    background-color: aliceblue;
+    border-radius: 2%;
+    padding: 3%;
+    
 }
 
 
@@ -532,6 +545,21 @@ legend{
         
     }
 
+    .slide{
+        width: 100%; /*Tamanho do slide dentro da section. Deixar em 100% se quiser a ocupação de toda a section*/
+        height: 80%;
+        overflow: hidden; /*Impede que o carrossel vaze*/
+        border-radius: 2%;
+        transition: all 0.4s;
+        /*align-items: center;*/
+      
+    }
+    
+    .image img{
+        width:  70vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 60vw; /*Nesse percentual permite a inclusão da tag <p>*/    
+    }
+
     .apresentar{
         display:block;
         margin-right: auto;
@@ -552,6 +580,7 @@ legend{
         display: flex;
         flex-direction: column-reverse;
     }
+    
 
 }
 
@@ -597,8 +626,39 @@ legend{
 }
 
 @media(max-width:500px){
+
+    .topo{
+        position:relative;
+    }
+    
+    .cabecalho{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: auto;
+    }
+
+    .logo{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -18%;
+        margin-bottom: -19%;
+           
+    }
+    
+        .logoIm{
+            width: 50%;
+            height: 20%;
+            position: relative;   
+        }    
+    
+
+
     .textos{
-        font-size: 120%;
+        font-size: 100%;
         
     }
 
@@ -636,5 +696,7 @@ legend{
         width: 98%;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }
