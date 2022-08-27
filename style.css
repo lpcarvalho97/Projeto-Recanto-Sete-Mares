@@ -36,6 +36,7 @@ body{
     text-align: center;
     /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");*/
     background-image: url("images/beach_big.jpg");
+    background-size: 113%;
     margin-top: 0%;/**/
     /*background-image: url("/images/pearlmienorpxhere.com.jpg");*/
     /*Estabelece o local da imagem de fundo, se o foco será no bottom da imagem ou no topo, por exemplo*/
@@ -93,12 +94,15 @@ body{
 }
 
 .localizacao{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 255, 0.415);
     margin-top: -10%;
     /*position:; /*Permite que os elementos fiquem conforme o justify content e, ainda, sobreponham a logo*/
     background-image: url("images/beach-sea-coast-water-ocean-wave-695776-pxhere.com.jpg");
+    background-size: 180%;
+    background-position: top;
     padding-top: 1%;
     height: 100%;
     
@@ -112,6 +116,7 @@ body{
     background-image: url("images/onda\ media-b.jpg");
     padding-top: 1%;
     height: 100%;
+
 }
 
 .mapa{
@@ -151,7 +156,7 @@ body{
 
 .acomodar{
     font-family: Vacation Planner, 'Times New Roman', Times, serif;
-    color:rgba(98, 0, 255, 0.363);
+    color:rgba(98, 0, 255, 0.507);
     margin-top: auto;
     margin-bottom: auto;
     font-size: 400%;
@@ -170,6 +175,7 @@ body{
     /*background-color: rgb(141, 140, 138);*/
     /*background-color: rgba(114, 118, 119, 0.767);*/
     background-image: url("images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
+    background-size: 205%;
 }
 
 .slide{
@@ -545,8 +551,22 @@ figcaption{
 
 /*Início da Responsividade*/
 
+@media(max-width:1300px){
+
+}
+
+
 @media(max-width: 750px){
 
+    .recanto{
+        padding-top: 0%;
+        width: 100%;
+        text-align: center;
+        /*background-image: url("https://c.pxhere.com/photos/34/0c/ocean_wave_sea_water_tide_tidal_beach_surf-695776.jpg!d");*/
+        background-image: url("images/beach_big.jpg");
+        background-size: 170%;
+    
+    }
     
 .logo{
     width: 100%;
@@ -562,6 +582,7 @@ figcaption{
         height: 20%;
         position: relative;   
     }    
+
 
     .mapa{
         width: 80%;
@@ -667,17 +688,21 @@ figcaption{
 @media(max-width:500px){
 
     .topo{
-        position:relative;
+        position: relative;
     }
     
     .cabecalho{
         padding-top: 2%;
-        padding-bottom: 2%;
+        padding-bottom: 1%;
         display: flex;
         justify-content: space-around;
-        position: relative;
         top: auto;
     }
+
+    .recanto{
+        background-size: 190%;
+    }
+
 
     .logo{
         width: 100%;
@@ -685,19 +710,16 @@ figcaption{
         margin-right: auto;
         margin-top: -18%;
         margin-bottom: -19%;
+      
            
     }
     
         .logoIm{
             width: 50%;
             height: 20%;
-            position: relative;   
+            position:relative;   
         }    
     
-        .recanto{
-            background-image: url("images/onda\ media\ b--.jpg");
-        }
-
     .fundot{
         background-color: rgba(17, 247, 236, 0.356);
     }
@@ -798,9 +820,6 @@ figcaption{
 }
 
 @media(max-width: 300px){
-    .recanto{
-        background-position: top;
-    }
 
     .localizacaoM{
         background-position: top;
