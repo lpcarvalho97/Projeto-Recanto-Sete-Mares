@@ -120,8 +120,9 @@ body{
 }
 
 .mapa{
-   width: 40vw;
+   width: 40%;
   margin-bottom: 1%;
+  margin-left: 2%;
     
 }
 
@@ -139,6 +140,7 @@ body{
 }
 
 .textos{
+    width: 60%;
     font-family: Vacation Planner, 'Times New Roman', Times, serif;
     color:rgba(98, 0, 255, 0.507);
     margin-top: auto;
@@ -152,6 +154,7 @@ body{
     background-color: rgba(17, 247, 235, 0.212);
     border-radius: 3%;
     padding: 1%;
+    margin-right: 2%;
 }
 
 .acomodar{
@@ -174,7 +177,7 @@ body{
     width: 100%;
     /*background-color: rgb(141, 140, 138);*/
     /*background-color: rgba(114, 118, 119, 0.767);*/
-    background-image: url("images/pearl-white-clam-top-shot-shell-white-pearl-1602646-pxhere.com.jpg");
+    background-image: url("images/pearl\ big.jpg");
     background-size: 205%;
 }
 
@@ -551,8 +554,18 @@ figcaption{
 
 /*Início da Responsividade*/
 
-@media(max-width:1300px){
+@media(max-width:1000px){
+    .textos{
+        width: 50%;
+        font-size: 130%;
+    }
 
+    .mapa{
+        width: 60%;
+    }
+    .especial{
+        display: none;
+    }
 }
 
 
@@ -585,10 +598,10 @@ figcaption{
 
 
     .mapa{
-        width: 80%;
-        height: 60vw;
-       margin-bottom: 1%;
-       margin-top: 6%;
+        width: 50%;
+       margin-bottom: 2%;
+       margin-top: 2%;
+
          
      }
 
@@ -665,11 +678,22 @@ figcaption{
          
      }
 
+     .fundot{
+        background-color: rgba(17, 247, 236, 0.356);
+        margin: 0%;
+    }
+
+     .textos{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
 @media(max-width: 600px){
 
+  
     .acomodar{
         
         font-size: 300%;
@@ -695,7 +719,7 @@ figcaption{
         padding-top: 2%;
         padding-bottom: 1%;
         display: flex;
-        justify-content: space-around;
+        justify-content:space-around;
         top: auto;
     }
 
@@ -720,16 +744,12 @@ figcaption{
             position:relative;   
         }    
     
-    .fundot{
-        background-color: rgba(17, 247, 236, 0.356);
-    }
+    
 
 
     .textos{
         font-size: 100%;
         color:rgba(98, 0, 255, 0.507);
-        margin-left: 0%;
-        
     }
 
     .nome{
@@ -757,7 +777,9 @@ figcaption{
     }
 
     .setor2{
-        background-image: url("images/pearlmienorpxhere.com.jpg");
+        /*background-image: url("images/pearlmienorpxhere.com.jpg");*/
+        background-size: 600%;
+        background-position-x: left;
     }
 
     .image img{
@@ -819,10 +841,11 @@ figcaption{
     }
 }
 
-@media(max-width: 300px){
+@media(max-width: 330px){
 
     .localizacaoM{
         background-position: top;
     }
+
 
 }
