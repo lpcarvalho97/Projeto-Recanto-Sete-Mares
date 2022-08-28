@@ -28,6 +28,10 @@ body{
     justify-content: space-around;
 }
 
+.cabecalhom{
+    display:none;
+}
+
 /*Define o tamanho da logo e o seu comportamento*/
 
 .recanto{
@@ -90,7 +94,14 @@ body{
     font-size: large;
     color: aliceblue;
     text-decoration: none;
-    position: relative;
+    position:relative;
+}
+
+.contatoiw{
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+    position:relative;
 }
 
 .localizacao{
@@ -692,7 +703,6 @@ figcaption{
 }
 
 @media(max-width: 600px){
-
   
     .acomodar{
         
@@ -716,12 +726,41 @@ figcaption{
     }
     
     .cabecalho{
+        display: none;
+    }
+
+    .cabecalhom{
         padding-top: 2%;
         padding-bottom: 1%;
         display: flex;
         justify-content:space-around;
         top: auto;
+        height: 2vh;
+        background-color: cornflowerblue;
+        align-items: center;
     }
+
+    /* TEstes */
+
+    .fa-brands fa-whatsapp fa-lg{
+        margin-right: auto;
+        margin-left: 1%;
+    }
+
+    .contato{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contatoi{
+        padding-right: 3%;
+    }
+
+    .contatoiw{
+        padding-left: 3%;
+    }
+
+    /*testes*/
 
     .recanto{
         background-size: 190%;
